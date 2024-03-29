@@ -25,3 +25,6 @@ RSpec.describe Card do
     end
   end
 end
+
+#i have been working on this since 10am yesterday and its noon the next day. I give up. It says I have too many end statements
+# but my roomates doesnt do that, only mine does that, it wont let me close out the file and it wont tell me whats wrong and its infuriating
