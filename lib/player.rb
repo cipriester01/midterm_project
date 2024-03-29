@@ -36,10 +36,10 @@ class Player
       @pot -= current_bet
       return current_bet
     else
-      amount_seen = @pot
+    in_pot = @pot
       @pot = 0
       # return remaining
-      return amount_seen
+      return in_pot
     end
   end
 

@@ -35,9 +35,9 @@ class Game
     @current_bet = 0
     # loops each player for bet amount
     @players.each do |player|
-      amount_seen = player.see(@current_bet)
-      @pot += amount_seen
-      @current_bet = amount_seen if amount_seen > @current_bet
+    in_pot = player.see(@current_bet)
+      @pot += in_pot
+      @current_bet = in_pot if in_pot > @current_bet
     end
     # if all players bet nothing
     if @current_bet == 0
