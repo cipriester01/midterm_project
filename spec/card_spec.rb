@@ -1,4 +1,4 @@
-require '../lib/card'
+require_relative '../lib/card'
 
 RSpec.describe Card do
   describe '#initialize' do
