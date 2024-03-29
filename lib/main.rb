@@ -10,13 +10,15 @@ print "How many players? "
 num_players = gets.chomp.to_i
 game = Game.new(num_players)
 
+game.deal_initial_cards
+
 loop do
-  game.deal_initial_cards
 
   # first round
   puts "\nBetting Round"
   if game.collect_bets
     puts "No bets placed, gg."
+
     next
   end
 
