@@ -79,6 +79,7 @@ loop do
   play_again = gets.chomp.upcase
   break if play_again != 'y'
 
+  # resets every player to folded false for new round and empties deck (expected in tests)
   game.players.each(&:reset_folded)
   game.deck = Deck.new
 end
