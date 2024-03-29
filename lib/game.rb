@@ -11,7 +11,6 @@ class Game
     @players = []
     num_players.times { @players << Player.new }
     @current_player = @players.first
-
     # init pot and bet to nothing
     @pot = 0
     @current_bet = 0
@@ -44,6 +43,7 @@ class Game
       puts "No player placed a bet, gg."
       return false
     end
+    puts "Bet: #{@current_bet}"
     true
   end
 

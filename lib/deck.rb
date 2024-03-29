@@ -4,7 +4,7 @@ class Deck
   attr_reader :cards
 
   # inits new deck of cards in array and shuffles
-  def intialize
+  def initialize
     @cards = []
     build_deck
     shuffle!

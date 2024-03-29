@@ -39,7 +39,7 @@ class Player
     in_pot = @pot
       @pot = 0
       # return remaining
-      return in_pot
+      return current_bet
     end
   end
 

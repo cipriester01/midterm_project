@@ -15,7 +15,7 @@ loop do
 
   # first round
   puts "\nBetting Round"
-  if !game.collect_bets
+  if game.collect_bets
     puts "No bets placed, gg."
     next
   end
